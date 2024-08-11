@@ -1,0 +1,79 @@
+@import "../../responsive.scss";
+
+
+.Footer{
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height:90px;
+    background: linear-gradient(to top, rgb(156, 154, 154),#b5b5b4) ;
+    // background: linear-gradient(to left, #9caeb9, #dddcdc);
+    color: #FFF6E9;
+    text-align: center;
+
+
+    // @include lg {
+    //      background-color: rgb(247, 210, 196);
+    //      max-width: 1280px;
+    //   }
+    
+    //   @include md {
+    //      background-color: rgb(186, 203, 234);
+    //     max-width: 768px;
+    //   }
+    
+
+    .rights{
+        margin-top: 10px;
+       // margin-bottom: 8px;
+    }
+    .socials{
+        // @include sm{
+        //     display: none;
+        // }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+       // margin-bottom: 10px;
+        .twitter{
+            color:black;
+        }
+        .facebook{
+            color:blue;
+        }
+        .insta{
+            color:#FF0060;
+        }
+        .linkedin{
+            color:rgb(99, 99, 216);
+        }
+        .span{
+            .a{
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .contacts{
+        display: flex;
+        justify-content:center;
+        gap:40px;
+        align-items: center;
+        color:#FFF6E9;
+
+        @include sm{
+            display: none;
+        }
+        .span{
+            .a{
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}

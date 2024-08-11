@@ -1,0 +1,114 @@
+@import "../../responsive.scss";
+
+.profilePage {
+  display: flex;
+  height: 100%;
+  overflow-y: scroll;
+  padding-bottom: 70px;
+
+  @include md{
+    flex-direction: column;
+    overflow: scroll;
+  }
+
+  .details {
+    flex: 3;
+    overflow-y: scroll;
+    padding-bottom: 80px;
+    padding-left: 45px;
+
+    @include md{
+      flex:none;
+      height: max-content;
+    }
+
+    .wrapper{
+      padding-right: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      padding-top: 20px;
+
+
+
+      .title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        h1{
+          font-weight: 400;
+        }
+
+        button{
+          padding: 12px 24px;
+          background-color: #DDE6ED;
+          border-radius: 10px;
+          cursor: pointer;
+          border: none;
+        }
+      }
+
+      .uinfo{
+        // border: 0px solid black;
+        height:200px;
+        width:100%;
+        border-radius: 10px;
+        background-color: #DDE6ED;
+        .info{
+          margin-top: 13px;
+          // margin-left: 36.5%;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+          button{
+            background-color: #50727B;
+            color:white;
+            height:40px;
+            width:70px;
+            border:none;
+            border-radius: 10px;
+            font-size: 15px;
+            &:hover{
+              cursor: pointer;
+            }
+          }
+  
+          span{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+          }
+  
+          img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+  .chatContainer {
+    flex: 2;
+    background-color: #EDE4FF;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 70px;
+
+    @include md{
+      flex:none;
+      height: max-content;
+    }
+
+    .wrapper{
+      padding: 0px 20px;
+      height: 100%;
+    }
+  }
+}

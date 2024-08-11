@@ -1,0 +1,85 @@
+.newPostPage {
+  height: 100%;
+  display: flex;
+
+  .formContainer {
+    flex: 3;
+    overflow: scroll;
+    background-color: #F1F8E8;
+    padding-left: 20px; 
+    padding-top: 20px;
+
+    .wrapper {
+      margin: 30px 50px 100px 0px;
+
+      form {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        .item {
+          width: 30%;
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+
+          // label {
+          // }
+          input {
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px solid gray;
+          
+          }
+          select {
+            padding: 19px;
+          }
+
+          &.description {
+            width: 100%;
+            height: 320px;
+
+            .quill > .ql-container > .ql-editor{
+              height: 200px;
+              font-size: 16px;
+            }
+          }
+        }
+        .sendButton {
+          width: 30%;
+          border-radius: 5px;
+          border: none;
+          background-color: #50727B;
+          color: white;
+          font-weight: bold;
+          font-size:17px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .sideContainer {
+    padding-top: 400px;
+    padding-bottom: 20px;
+    height: calc(100vh - 170px);
+    flex: 2;
+    background-color: #EDE4FF;
+  //  background-image: url("mbg2.png");
+
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    //padding-top: 20px;
+
+    img {
+      width: 50%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+  }
+}

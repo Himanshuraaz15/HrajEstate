@@ -1,0 +1,123 @@
+@import "../../responsive.scss";
+
+.searchBar{
+
+    margin-top: 50px;
+
+    .type {
+
+        @include sm{
+            margin-bottom: 5px;
+        }
+        button {
+          padding: 16px 36px;
+          border-radius: 10px;
+          border: 1px solid #999;
+          border-bottom: none;
+          cursor: pointer;
+          background-color: #E8ECF1;
+          text-transform: capitalize;
+    
+          &.active {
+            background-color: #333C4A;
+            color: white; 
+          }
+    
+          &:first-child {
+           // border-top-left-radius: 10px;
+           // border-right: none;
+           border-bottom-left-radius: 0px;
+           border-bottom-right-radius: 0px;
+           @include sm{
+            border-bottom: 1px solid #999;
+            border-bottom-left-radius:10px ;
+            border-bottom-right-radius: 10px;
+            margin-right: 4px;
+           }
+          }
+          &:last-child {
+           // border-top-right-radius: 10px;
+           border-bottom-left-radius: 0px;
+           border-bottom-right-radius: 0px;
+           @include sm{
+            border-bottom: 1px solid #999;
+            border-bottom-left-radius:10px ;
+            border-bottom-right-radius: 10px;
+           }
+          }
+        }
+      }
+    
+      form {
+        border: 1px solid #999;
+        display: flex;
+        justify-content: space-between;
+        height: 64px;
+        gap: 5px;
+    
+        @include sm {
+          flex-direction: column;
+          border: none;
+        }
+    
+        input {
+          border: none;
+          padding: 0px 10px;
+          width: 200px;
+    
+          @include lg {
+            padding: 0px 5px;
+    
+            &:nth-child(2),
+            &:nth-child(3) {
+              width: 140px;
+            }
+          }
+          @include md {
+            width: 200px;
+            &:nth-child(2),
+            &:nth-child(3) {
+              width: 200px;
+            }
+          }
+    
+          @include sm{
+            width: auto;
+            &:nth-child(2),
+            &:nth-child(3) {
+              width: auto;
+            }
+            padding: 20px;
+            border: 1px solid #999;
+            border-radius: 10px;
+          }
+        }
+        
+        a{
+          flex: 1;
+          background-color: #333C4A;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          button {
+         
+            border: none;
+            cursor: pointer;
+            background-color: #333C4A;
+            
+          // width:10%;
+      
+            @include sm{
+              padding: 10px;
+              border-radius: 10px;
+            }
+      
+            img {
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+       
+      }
+}

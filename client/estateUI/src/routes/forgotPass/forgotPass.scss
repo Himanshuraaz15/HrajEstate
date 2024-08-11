@@ -1,0 +1,65 @@
+
+
+.forgotPass {
+    display: flex;
+    height: 90vh;
+    .formContainer {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        h1 {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        input {
+          margin-bottom: 15px;
+          padding: 10px;
+          font-size: 16px;
+        }
+        button {
+          padding: 10px;
+          font-size: 16px;
+          background-color: #50727B;
+          color: white;
+          border: none;
+          cursor: pointer;
+          &:disabled {
+            background-color: #cccccc;
+          }
+        }
+        .error {
+          color: red;
+          margin-top: 10px;
+        }
+        .message {
+          color: green;
+          margin-top: 10px;
+        }
+        a {
+          margin-top: 10px;
+          text-align: center;
+          color: gray;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .imgContainer {
+      flex: 1;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  
